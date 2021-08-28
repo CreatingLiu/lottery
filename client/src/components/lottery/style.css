@@ -1,0 +1,141 @@
+.turntable-box {
+    background: #fadd95;
+    box-shadow: inset 0 0 16px #ff9a2e;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 24px;
+    width: 100%;
+    height: 100%
+}
+
+@media (max-width:600px) {
+    .turntable-box {
+        padding: 20px
+    }
+}
+
+.turntable-box .dot {
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px
+}
+
+@media (max-width:600px) {
+    .turntable-box .dot {
+        width: 10px;
+        height: 10px
+    }
+}
+
+.turntable-box .white {
+    background: #fff7e8
+}
+
+.turntable-box .border {
+    border: 1.5px solid #fff7e8
+}
+
+.turntable-box .vertex {
+    background: #e37815
+}
+
+.turntable-box .up-down {
+    position: absolute;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: calc(100% - 16px);
+    justify-content: space-between
+}
+
+@media (max-width:600px) {
+    .turntable-box .up-down {
+        height: 20px
+    }
+}
+
+.turntable-box .up-down .left-border-dot {
+    transform: translateX(-100%)
+}
+
+.turntable-box .up-down .right-border-dot {
+    transform: translateX(100%)
+}
+
+.turntable-box .upper-border {
+    top: 0
+}
+
+.turntable-box .lower-border {
+    bottom: 0
+}
+
+.turntable-box .left-right {
+    position: absolute;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: calc(100% - 16px);
+    justify-content: space-between;
+    flex-direction: column
+}
+
+@media (max-width:600px) {
+    .turntable-box .left-right {
+        width: 20px
+    }
+}
+
+.turntable-box .left-border {
+    left: 0
+}
+
+.turntable-box .left-border .vertex {
+    visibility: hidden
+}
+
+.turntable-box .right-border {
+    right: 0
+}
+
+.turntable-box .right-border .vertex {
+    visibility: hidden
+}
+
+.turntable-box .blocks {
+    width: 100%;
+    height: 100%
+}
+
+.turntable-box .blocks .item-container {
+    width: 100%;
+    height: 100%;
+    background: #e37815;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between
+}
+
+.turntable-box .blocks .item-container .item {
+    width: calc(33.33333% - 5.33333px);
+    height: calc(33.33333% - 5.33333px)
+}
+
+@media (max-width:600px) {
+    .turntable-box .blocks .item-container .item {
+        height: calc(33.33333% - 9.33333px)
+    }
+}
+
+.turntable-box .blocks .item-container .chosen {
+    background: #ffcf8b
+}

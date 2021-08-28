@@ -1,0 +1,40 @@
+.winninglist_container {
+    overflow: hidden
+}
+
+.winninglist_container .item {
+    padding-bottom: 8px;
+    display: flex;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff
+}
+
+.winninglist_container .item p {
+    margin: 0
+}
+
+.winninglist_container .item .message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    flex: 1;
+    padding-right: 5px
+}
+
+.winninglist_container .item .date {
+    color: #e8f3ff
+}
+
+.winning_list {
+    width: 100%;
+    height: 172px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: rgba(255,247,232,.3);
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+}

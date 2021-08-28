@@ -1,0 +1,134 @@
+.modal__mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+
+.modal__wrapper {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0;
+}
+
+.lottery_modal .modal__content {
+    position: relative;
+    margin: 0 auto 50px;
+    padding: 0;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    top: 50%;
+    color: #282f38;
+    transform: translateY(-50%);
+}
+
+.lottery_modal .modal__content .modal__header {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 30px 12px 30px;
+    border-bottom: solid 1px #e5e6eb;
+    padding: 0 20px;
+    line-height: 56px;
+}
+
+.lottery_modal .modal__content .modal__header .modal__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d2129;
+}
+
+.modal__headerbtn {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #939aa3;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    pointer-events: none;
+}
+
+
+.modal__body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.lottery_modal .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lottery_modal .wrapper img {
+    height: 88px;
+    padding-top: 36px;
+    padding-bottom: 20px;
+}
+
+.lottery_modal .wrapper .title {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #d25f00;
+    opacity: .8;
+}
+
+.lottery_modal .wrapper .desc {
+    text-align: center;
+}
+
+.lottery_modal .wrapper .desc p {
+    margin: 0;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1d2129;
+}
+
+.lottery_modal .wrapper .submit {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    padding: 0;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #1d7dfa;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+}
